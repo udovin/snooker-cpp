@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Snooker" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Snooker" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-s-d" />
+					<Add library="sfml-window-s-d" />
+					<Add library="sfml-audio-s-d" />
+					<Add library="sfml-network-s-d" />
+					<Add library="sfml-system-s-d" />
+					<Add library="opengl32" />
+					<Add library="freetype" />
+					<Add library="jpeg" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add library="openal32" />
+					<Add library="flac" />
+					<Add library="vorbisenc" />
+					<Add library="vorbisfile" />
+					<Add library="vorbis" />
+					<Add library="ogg" />
+					<Add library="ws2_32" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Snooker" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics-s" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-audio-s" />
+					<Add library="sfml-network-s" />
+					<Add library="sfml-system-s" />
+					<Add library="opengl32" />
+					<Add library="freetype" />
+					<Add library="jpeg" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add library="openal32" />
+					<Add library="flac" />
+					<Add library="vorbisenc" />
+					<Add library="vorbisfile" />
+					<Add library="vorbis" />
+					<Add library="ogg" />
+					<Add library="ws2_32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++98" />
+			<Add option="-DSFML_STATIC" />
+			<Add directory="libs/SFML-2.3.2/include" />
+		</Compiler>
+		<Linker>
+			<Add directory="libs/SFML-2.3.2/lib" />
+		</Linker>
+		<Unit filename="app/Application.cpp" />
+		<Unit filename="app/Application.h" />
+		<Unit filename="app/SnookerApplication.cpp" />
+		<Unit filename="app/SnookerApplication.h" />
+		<Unit filename="app/all.h" />
+		<Unit filename="app/data/DataManager.cpp" />
+		<Unit filename="app/data/DataManager.h" />
+		<Unit filename="app/data/FontFile.cpp" />
+		<Unit filename="app/data/FontFile.h" />
+		<Unit filename="app/data/FontManager.cpp" />
+		<Unit filename="app/data/FontManager.h" />
+		<Unit filename="app/data/FontResource.cpp" />
+		<Unit filename="app/data/FontResource.h" />
+		<Unit filename="app/data/ImageFile.cpp" />
+		<Unit filename="app/data/ImageFile.h" />
+		<Unit filename="app/data/ImageManager.cpp" />
+		<Unit filename="app/data/ImageManager.h" />
+		<Unit filename="app/data/ImageResource.cpp" />
+		<Unit filename="app/data/ImageResource.h" />
+		<Unit filename="app/data/SoundFile.cpp" />
+		<Unit filename="app/data/SoundFile.h" />
+		<Unit filename="app/data/SoundManager.cpp" />
+		<Unit filename="app/data/SoundManager.h" />
+		<Unit filename="app/data/all.h" />
+		<Unit filename="app/events/Event.cpp" />
+		<Unit filename="app/events/Event.h" />
+		<Unit filename="app/events/EventDispatcher.cpp" />
+		<Unit filename="app/events/EventDispatcher.h" />
+		<Unit filename="app/events/EventListener.cpp" />
+		<Unit filename="app/events/EventListener.h" />
+		<Unit filename="app/frames/ErrorFrame.cpp" />
+		<Unit filename="app/frames/ErrorFrame.h" />
+		<Unit filename="app/frames/Frame.cpp" />
+		<Unit filename="app/frames/Frame.h" />
+		<Unit filename="app/frames/GameFrame.cpp" />
+		<Unit filename="app/frames/GameFrame.h" />
+		<Unit filename="app/frames/LoadFrame.cpp" />
+		<Unit filename="app/frames/LoadFrame.h" />
+		<Unit filename="app/frames/MenuFrame.cpp" />
+		<Unit filename="app/frames/MenuFrame.h" />
+		<Unit filename="app/frames/all.h" />
+		<Unit filename="app/gui/BallShape.cpp" />
+		<Unit filename="app/gui/BallShape.h" />
+		<Unit filename="app/gui/FrameRate.cpp" />
+		<Unit filename="app/gui/FrameRate.h" />
+		<Unit filename="app/gui/GameTable.cpp" />
+		<Unit filename="app/gui/GameTable.h" />
+		<Unit filename="app/gui/InfoBar.cpp" />
+		<Unit filename="app/gui/InfoBar.h" />
+		<Unit filename="app/gui/SimpleButton.cpp" />
+		<Unit filename="app/gui/SimpleButton.h" />
+		<Unit filename="app/gui/all.h" />
+		<Unit filename="config.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="phys/Body.cpp" />
+		<Unit filename="phys/Body.h" />
+		<Unit filename="phys/World.cpp" />
+		<Unit filename="phys/World.h" />
+		<Unit filename="phys/all.h" />
+		<Unit filename="phys/collision.cpp" />
+		<Unit filename="phys/collision.h" />
+		<Unit filename="phys/math/Vector2.cpp" />
+		<Unit filename="phys/math/Vector2.h" />
+		<Unit filename="phys/math/all.h" />
+		<Unit filename="phys/shapes/Circle.cpp" />
+		<Unit filename="phys/shapes/Circle.h" />
+		<Unit filename="phys/shapes/Polygon.cpp" />
+		<Unit filename="phys/shapes/Polygon.h" />
+		<Unit filename="phys/shapes/Shape.cpp" />
+		<Unit filename="phys/shapes/Shape.h" />
+		<Unit filename="phys/shapes/all.h" />
+		<Unit filename="resources.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
